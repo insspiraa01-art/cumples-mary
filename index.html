@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -149,7 +150,9 @@ width:36%;
 
 <div class="container">
 
-<img src="invitacion.png">
+<!-- IMAGEN DE LA INVITACIÓN -->
+
+<img src="Feliz dia Nona.png" alt="Invitación cumpleaños Mary">
 
 <!-- CONTROLES MUSICA -->
 
@@ -211,7 +214,7 @@ href="https://maps.app.goo.gl/2mbsCxbHHR8FXzWd8"
 
 target="_blank"></a>
 
-<!-- CONFIRMAR -->
+<!-- CONFIRMAR ASISTENCIA -->
 
 <a class="confirmar"
 
@@ -239,11 +242,12 @@ audio.pause();
 
 }
 
+
 /* CONTADOR */
 
-/* CAMBIA ESTA FECHA POR LA FECHA DEL CUMPLEAÑOS DE MARY */
+/* Fecha del cumpleaños de Mary: 12 de septiembre de 2026 */
 
-var fechaEvento = new Date("Apr 18, 2027 00:00:00").getTime();
+var fechaEvento = new Date("Sep 12, 2026 00:00:00").getTime();
 
 setInterval(function(){
 
@@ -253,11 +257,20 @@ var diferencia = fechaEvento - ahora;
 
 var dias = Math.floor(diferencia / (1000*60*60*24));
 
-var horas = Math.floor((diferencia % (1000*60*60*24)) / (1000*60*60));
+var horas = Math.floor(
+(diferencia % (1000*60*60*24)) / (1000*60*60)
+);
 
-var minutos = Math.floor((diferencia % (1000*60*60)) / (1000*60));
+var minutos = Math.floor(
+(diferencia % (1000*60*60)) / (1000*60)
+);
 
-var segundos = Math.floor((diferencia % (1000*60)) / 1000);
+var segundos = Math.floor(
+(diferencia % (1000*60)) / 1000
+);
+
+
+/* Mostrar contador */
 
 document.getElementById("dias").innerHTML = dias;
 
@@ -274,3 +287,4 @@ document.getElementById("segundos").innerHTML = segundos;
 </body>
 
 </html>
+```
