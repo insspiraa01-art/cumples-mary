@@ -84,10 +84,10 @@ text-shadow:0 2px 6px rgba(0,0,0,0.6);
 
 .mapa{
 position:absolute;
-top:48.5%;
-left:49%;
-width:47%;
-height:5%;
+top:50%;
+left:5%;
+width:42%;
+height:16%;
 z-index:4;
 }
 
@@ -95,10 +95,10 @@ z-index:4;
 
 .confirmar{
 position:absolute;
-top:92%;
-left:24%;
-width:53%;
-height:7%;
+top:90%;
+left:35%;
+width:30%;
+height:5%;
 z-index:4;
 }
 
@@ -124,17 +124,16 @@ left:8%;
 }
 
 .mapa{
-top:48.5%;
-left:49%;
-width:47%;
-height:5%;
+top:52%;
+left:4%;
+width:46%;
+height:16%;
 }
 
 .confirmar{
-top:92%;
-left:24%;
-width:53%;
-height:7%;
+top:91%;
+left:32%;
+width:36%;
 }
 
 }
@@ -150,8 +149,6 @@ height:7%;
 </audio>
 
 <div class="container">
-
-<!-- IMAGEN DE LA INVITACIÓN -->
 
 <img src="Feliz dia Nona.png" alt="Invitación cumpleaños Mary">
 
@@ -210,16 +207,18 @@ height:7%;
 <!-- MAPA -->
 
 <a class="mapa"
-href="https://maps.app.goo.gl/2mbsCxbHHR8FXzWd8"
-target="_blank"
-aria-label="Abrir mapa"></a>
 
-<!-- CONFIRMAR ASISTENCIA -->
+href="https://maps.app.goo.gl/2mbsCxbHHR8FXzWd8"
+
+target="_blank"></a>
+
+<!-- CONFIRMAR -->
 
 <a class="confirmar"
+
 href="https://wa.me/3115929384?text=Hola,%20confirmo%20mi%20asistencia%20al%20cumplea%C3%B1os%20de%20Mary"
-target="_blank"
-aria-label="Confirmar asistencia"></a>
+
+target="_blank"></a>
 
 </div>
 
@@ -241,10 +240,7 @@ audio.pause();
 
 }
 
-
 /* CONTADOR */
-
-/* Cumpleaños de Mary: 12 de septiembre de 2026 */
 
 var fechaEvento = new Date("Sep 12, 2026 00:00:00").getTime();
 
@@ -254,9 +250,7 @@ var ahora = new Date().getTime();
 
 var diferencia = fechaEvento - ahora;
 
-var dias = Math.floor(
-diferencia / (1000*60*60*24)
-);
+var dias = Math.floor(diferencia / (1000*60*60*24));
 
 var horas = Math.floor(
 (diferencia % (1000*60*60*24)) / (1000*60*60)
@@ -269,9 +263,6 @@ var minutos = Math.floor(
 var segundos = Math.floor(
 (diferencia % (1000*60)) / 1000
 );
-
-
-/* Mostrar contador */
 
 document.getElementById("dias").innerHTML = dias;
 
