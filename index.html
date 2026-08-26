@@ -46,13 +46,6 @@ body{
 
 .contador{
     position:absolute;
-
-    /*
-    La imagen mide 2047px de alto.
-    El contador queda debajo de
-    "Cuenta Regresiva".
-    */
-
     top:39.35%;
     left:10%;
     width:80%;
@@ -105,11 +98,6 @@ body{
 .music-controls{
     position:absolute;
 
-    /*
-    Ubicación:
-    debajo de la palabra "Música"
-    */
-
     top:33.1%;
     left:4%;
     width:48%;
@@ -155,10 +143,6 @@ body{
 .mapa{
     position:absolute;
 
-    /*
-    Área exacta de la imagen del mapa
-    */
-
     top:48.55%;
     left:49.2%;
 
@@ -177,11 +161,6 @@ body{
 
 .confirmar{
     position:absolute;
-
-    /*
-    Área exacta del botón verde
-    "Click Aquí"
-    */
 
     top:93.8%;
     left:23.5%;
@@ -299,7 +278,7 @@ body{
      ========================================= -->
 
 <img
-    src="Feliz dia Nona.png"
+    src="Feliz dia Mary.png"
     alt="Invitación de cumpleaños de Mary"
 >
 
@@ -441,15 +420,6 @@ function pauseMusic(){
    CONTADOR
    ========================================= */
 
-/*
-   Cumpleaños de Mary:
-   12 de septiembre de 2026
-
-   Se cuenta hasta el final del día
-   para que durante el 24 de agosto
-   aparezcan 19 días.
-*/
-
 const fechaEvento =
     new Date("Sep 12, 2026 23:59:59").getTime();
 
@@ -531,12 +501,8 @@ function actualizarContador(){
 }
 
 
-/* Actualizar inmediatamente */
-
 actualizarContador();
 
-
-/* Actualizar cada segundo */
 
 setInterval(
     actualizarContador,
